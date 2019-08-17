@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="post-entry">
+    <h2>{{ object.name }}</h2>
+    <p>{{ object.desc }}</p>
+    <h3> Amenities : </h3>{{ object.amen }}
+    <h3>Address : </h3>{{ object.address }}
+    <h4>Area: {{ object.area }}</h4>
+    <h4>Contact: {{ object.ph_no }}</h4>
+    <h4>NOTE:  This is a {{ object.category }} Paying Guest accommodation</h4>
+
+    <strong>Disclaimer: </strong><p>Property Ads displayed are verified and we do not indulge in any
+        kind of dispute that arises between PG owners and PG tenants.</p>
+    <p> PG owners place your property add <strong><a href="{% url 'contact' %}"> FREE </a></strong> and start getting enquires.
+        We do not have any representatives/executives to deal on our behalf.</p>
+</div>
+{% endblock content %}

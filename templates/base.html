@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head>
+<title>pgnhostel</title>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
+rel="stylesheet">
+<link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+<body>
+<div>
+<header>
+<div class="nav-left">
+    <h1><a href="{% url 'home' %}">pgnhostel.com</a> </h1> <h4>stop searching...start exploring...
+    Exclusive portal for PG's and Hostels in Bengaluru</h4>
+
+</div>
+
+<div class="nav-right">
+    <a href="{% url 'about' %}"> About </a>  &nbsp;|&nbsp;
+    <a href="{% url 'contact' %}"> Contact </a>  &nbsp;|&nbsp;
+    <a href="{% url 'faq' %}"> FAQ </a>
+</div>
+
+</header>
+{% block content %}
+{% endblock content %}
+</div>
+</body>
+</html>

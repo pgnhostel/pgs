@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for pg in object_list %}
+<div class="post-entry">
+<h2><a href="{% url 'pg_detail' pg.pk %}">{{ pg.name }}</a></h2>
+<p>{{ pg.desc }}</p>
+</div>
+{% endfor %}
+{% endblock content %}
